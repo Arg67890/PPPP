@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpecializationFragment">
+
+    <TextView
+        android:id="@+id/textViewSpecilizationFragmentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Название: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSpecilizationFragmentCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:text="Код: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewSpecilizationFragmentName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpecilizationFragmentName" />
+
+    <TextView
+        android:id="@+id/textViewSpecilizationFragmentDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:text="Описание: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewSpecilizationFragmentCode"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpecilizationFragmentCode" />
+</androidx.constraintlayout.widget.ConstraintLayout>

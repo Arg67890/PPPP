@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/RecyclerViewItem"
+    tools:context=".AdministrationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textViewAdministrationFragmentSecondName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Фамилия: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAdministrationFragmentFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Имя: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewAdministrationFragmentSecondName"
+        app:layout_constraintTop_toBottomOf="@id/textViewAdministrationFragmentSecondName" />
+
+    <TextView
+        android:id="@+id/textViewAdministrationFragmentThirdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Отчество: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewAdministrationFragmentFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdministrationFragmentFirstName" />
+
+    <TextView
+        android:id="@+id/textViewAdministrationFragmentPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Должность: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewAdministrationFragmentThirdName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdministrationFragmentThirdName" />
+
+    <TextView
+        android:id="@+id/textViewAdministrationFragmentDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="monospace"
+        android:text="Описание работы"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdministrationFragmentPost" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

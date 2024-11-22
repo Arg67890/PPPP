@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textViewTeacherFragmentSecondName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Фамилия: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTeacherFragmentFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:text="Имя: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTeacherFragmentSecondName"
+        app:layout_constraintTop_toBottomOf="@id/textViewTeacherFragmentSecondName" />
+
+    <TextView
+        android:id="@+id/textViewTeacherFragmentThirdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:text="Отчество: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTeacherFragmentFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTeacherFragmentFirstName" />
+
+    <TextView
+        android:id="@+id/textViewTeacherFragmentSpecialization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:text="Специальность: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTeacherFragmentThirdName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTeacherFragmentThirdName" />
+
+    <TextView
+        android:id="@+id/textViewTeacherFragmentDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="monospace"
+        android:text="Описание: "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTeacherFragmentSpecialization" />
+</androidx.constraintlayout.widget.ConstraintLayout>
